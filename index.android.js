@@ -3,27 +3,16 @@
  * https://github.com/facebook/react-native
  * @flow
  */
-
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
-
-export default class StudentManagermentNativeApp extends Component {
+import {AppRegistry, StyleSheet, Text, View } from 'react-native';
+import App from './App';
+/*export default class StudentManagermentNativeApp extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native Android!
-        </Text>
-      </View>
+          <App />
     );
   }
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -43,4 +32,5 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('StudentManagermentNativeApp', () => StudentManagermentNativeApp);
+AppRegistry.registerComponent('StudentManagermentNativeApp', () => StudentManagermentNativeApp);*/
+AppRegistry.registerComponent('StudentManagermentNativeApp', () => App);
