@@ -35,9 +35,12 @@ import SideBar from "./components/sidebar";
 import Segment from "./components/segment";
 import Toast from "./components/toast";
 import Actionsheet from "./components/actionsheet";
-
+import Login from './components/login';
+import CardStudent from './components/home';
 const DrawerExample = DrawerNavigator(
   {
+    Login: { screen : Login },
+    CardStudent: { screen : CardStudent },
     Home: { screen: Home },
     Anatomy: { screen: Anatomy },
     Header: { screen: Header },
@@ -70,7 +73,7 @@ const DrawerExample = DrawerNavigator(
     Actionsheet: { screen: Actionsheet }
   },
   {
-    initialRouteName: "Home",
+    initialRouteName: "CardStudent",
     contentOptions: {
       activeTintColor: "#e91e63"
     },

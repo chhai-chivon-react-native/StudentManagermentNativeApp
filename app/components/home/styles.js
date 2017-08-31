@@ -12,19 +12,50 @@ export default {
   },
   logoContainer: {
     flex: 1,
-    marginTop: deviceHeight / 8,
-    marginBottom: 30
+    marginTop: 5
   },
   logo: {
     position: "absolute",
-    left: Platform.OS === "android" ? 40 : 50,
-    top: Platform.OS === "android" ? 35 : 60,
-    width: 280,
-    height: 100
+    left: Platform.OS === "android" ? 50 : 50,
+    top: Platform.OS === "android" ? 50 : 50,
+    alignSelf: "center",
+    marginLeft:Platform.OS === "android" ? 50 : 50,
+    marginRight:Platform.OS === "android" ? 50 : 50
   },
+  formContainer:{
+      flex: 1,
+      marginTop: 1,
+      marginLeft:2,
+      marginRight:2
+   },
   text: {
     color: "#D8D8D8",
     bottom: 6,
     marginTop: 5
-  }
+  },
+    btnLogin: {
+        flex:1,
+        backgroundColor: "#6FAF98",
+        alignSelf: "center",
+        width:100,
+        marginRight:10
+    },
+    btnText:{
+        alignSelf: "center"
+    },
+    formLogin:{
+        backgroundColor: "#ffffff",
+        marginLeft:2,
+        marginRight:2
+    },
+    container: {
+        backgroundColor: "#FFF"
+    },
+    text: {
+        alignSelf: "center",
+        marginBottom: 7
+    },
+    mb: {
+        marginBottom: 15
+    }
 };

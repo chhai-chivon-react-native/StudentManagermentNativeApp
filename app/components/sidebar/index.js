@@ -20,11 +20,23 @@ import {
 
 import styles from "./style";
 
-const drawerCover = require("../../../img/drawer-cover.png");
+const drawerCover = require("../../../img/background.nav.png");
 
-const drawerImage = require("../../../img/logo-kitchen-sink.png");
+const drawerImage = require("../../../img/parents.png");
 
 const datas = [
+	{
+		name:"About",
+		route:"About",
+		icon:"phone-portrait",
+        bg: "#C5F442",
+	},
+	{
+		name:"Logout",
+		route:"Logout",
+		icon: "phone-portrait",
+        bg: "#477EEA",
+	},
 	{
 		name: "Anatomy",
 		route: "Anatomy",
@@ -199,6 +211,7 @@ class SideBar extends Component {
 				<Content bounces={false} style={{ flex: 1, backgroundColor: "#fff", top: -1 }}>
 					<Image source={drawerCover} style={styles.drawerCover}>
 						<Image square style={styles.drawerImage} source={drawerImage} />
+							<Text>Parents</Text>
 					</Image>
 					<List
 						dataArray={datas}
